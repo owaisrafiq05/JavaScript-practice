@@ -191,7 +191,28 @@
 
     //////
 
-    var firstName = prompt("enter your first name", "Owais Rafiq"); // name owais rafiq as a sample/default value for user so he/she can take this name as a sample and can understand how to write code.
-    var lastName = prompt("enter your last name");
-    var fullName = firstName + " " + lastName; //we use concadinate to join first name and last name to make full name as a result
-    console.log("Full Name:", fullName);
+    // var firstName = prompt("enter your first name", "Owais Rafiq"); // name owais rafiq as a sample/default value for user so he/she can take this name as a sample and can understand how to write code.
+    // var lastName = prompt("enter your last name");
+    // var fullName = firstName + " " + lastName; //we use concadinate to join first name and last name to make full name as a result
+    // console.log("Full Name:", fullName);
+
+    //////
+
+    // var num28 = +prompt("Enter the 1st number"); //we use + sign defore prompt ro declare that prompt is the number
+    // var num29 = +prompt("Enter the 2nd number");
+    // num30 = num28 + num29;
+    // console.log("add", num30);
+
+    ///////
+
+    var num30 = +prompt("Enter Your Marks out of 100");
+    if(num30 > 50){
+        console.log("Pass");
+    } 
+    else {
+        console.log("Fail");
+    }
+    
+
+
+    

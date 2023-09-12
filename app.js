@@ -212,7 +212,17 @@
     else {
         console.log("Fail");
     }
+
+    // = => assigning operator
+    // == => equals to
     
+    var gender = male; //// {} => log of statement
+    if(gender == male){ 
+        console.log("Allow");
+    } 
+    else {
+        console.log("Not Allow");
+    }
 
 
     

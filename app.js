@@ -306,25 +306,34 @@
 /////
 //// Marksheet calculator
 
-var marks = prompt("Enter your Marks");
-console.log("marks",marks);
-if (marks<=100 && marks>=80){
-    console.log("You have scored A+ grade");
-}
-else if (marks<=79 && marks>=70){
-    console.log("You have scored A grade");
-}
-else if (marks<=69 && marks>=60){
-    console.log("You have scored B grade");
-}
-else if (marks<=59 && marks>=51){
-    console.log("You have scored C grade");
-}
-else if(marks<=50 && marks>=0){
-    console.log("Sorry, You have scored F grade");
-}
-else{
-    console.log("ERROR");
-}
+// var marks = prompt("Enter your Marks");
+// console.log("marks",marks);
+// if (marks<=100 && marks>=80){
+//     console.log("You have scored A+ grade");
+// }
+// else if (marks<=79 && marks>=70){
+//     console.log("You have scored A grade");
+// }
+// else if (marks<=69 && marks>=60){
+//     console.log("You have scored B grade");
+// }
+// else if (marks<=59 && marks>=51){
+//     console.log("You have scored C grade");
+// }
+// else if(marks<=50 && marks>=0){
+//     console.log("Sorry, You have scored F grade");
+// }
+// else{
+//     console.log("ERROR");
+// }
 
 /////
+
+var emailid = prompt("Enter Email id");
+var emailpass = prompt("Enter the password");
+if(emailid == "admin@gmail.com" && emailpass == "pass12345"){
+    console.log("LOG IN");
+}
+else{
+    console.log("Invalid Email and Password");
+}

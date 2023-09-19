@@ -191,38 +191,140 @@
 
     //////
 
+
     // var firstName = prompt("enter your first name", "Owais Rafiq"); // name owais rafiq as a sample/default value for user so he/she can take this name as a sample and can understand how to write code.
     // var lastName = prompt("enter your last name");
     // var fullName = firstName + " " + lastName; //we use concadinate to join first name and last name to make full name as a result
     // console.log("Full Name:", fullName);
 
-    //////
+    /////
 
-    // var num28 = +prompt("Enter the 1st number"); //we use + sign defore prompt ro declare that prompt is the number
-    // var num29 = +prompt("Enter the 2nd number");
-    // num30 = num28 + num29;
-    // console.log("add", num30);
+    // = => assigning out
+    // == => to equal something
+    // === => Compare the value of Datatypes and numbers
 
-    ///////
+    /////
 
-    var num30 = +prompt("Enter Your Marks out of 100");
-    if(num30 > 50){
-        console.log("Pass");
-    } 
-    else {
-        console.log("Fail");
-    }
-
-    // = => assigning operator
-    // == => equals to
+    // if => true
+    // else => false
+    // else if => for multiple condition
     
-    var gender = male; //// {} => log of statement
-    if(gender == male){ 
-        console.log("Allow");
-    } 
-    else {
-        console.log("Not Allow");
-    }
+//     var stdAge = prompt("Enter Your Age");
+//     if(stdAge == 20){
+//         console.log("Allow");
+//     }
+//    else if (stdAge == 25){
+//         console.log("Allow");
+//     }
+//     else if (stdAge == 30){
+//         console.log("Allow");
+//     }
+//     else if (stdAge == 35){
+//         console.log("Allow");
+//     }
+//     else{
+//         console.log("Not Allow");
+//     }
 
+////// making calculator
 
-    
+// var num35 = +prompt("Enter Num1");
+// var num36 = +prompt("Enter Num2");
+// var opt = prompt("Enter Opt", "+,-,*,/");
+
+// if (opt == "+"){
+//     console.log(num1 + num2);
+// }
+// else if (opt == "-"){
+//     console.log(num1 - num2);
+// }
+// else if (opt == "*"){
+//     console.log(num1 * num2);
+// }
+// else if (opt == "/"){
+//     console.log(num1 / num2);
+// }
+// else{
+//     console.log("ERROR");
+// }
+
+/////
+
+// > => greater than
+// < => less than
+// => => greater than and equal to
+// <= => less than and equal to
+
+/////
+
+// var gender = prompt("Enter Your Gender");
+// console.log("gender",gender);
+// if(gender == "male"){
+//     console.log("Boys Section");
+// }
+// else{
+//     console.log("Not Allowed");
+// }
+
+/////
+
+// var salary = prompt("Enter Your Salary");
+// console.log("Salary = ",salary);
+// if(salary > 100000){
+//     console.log("can survive");
+// }
+// else{
+//     console.log("can't survive");
+// }
+
+// GATES 
+// && => AND gate
+// || => OR gate
+// ! => NOT gate
+
+//////
+
+// var age = 19;
+// if(age >=18 && age <=40){
+//     console.log("ALLOW");
+// }
+// else{
+//     console.log("NOT ALLOW");
+// }
+
+////
+
+// var age = 19;
+// var gender = "male"; 
+// if(age >=18 && age <=40 && gender === "male" || gender === "female"){
+//     console.log("ALLOW");
+// }
+// else{
+//     console.log("NOT ALLOW");
+// }
+
+/////
+//// Marksheet calculator
+
+var marks = prompt("Enter your Marks");
+console.log("marks",marks);
+if (marks<=100 && marks>=80){
+    console.log("You have scored A+ grade");
+}
+else if (marks<=79 && marks>=70){
+    console.log("You have scored A grade");
+}
+else if (marks<=69 && marks>=60){
+    console.log("You have scored B grade");
+}
+else if (marks<=59 && marks>=51){
+    console.log("You have scored C grade");
+}
+else if(marks<=50 && marks>=0){
+    console.log("Sorry, You have scored F grade");
+}
+else{
+    console.log("ERROR");
+}
+
+/////

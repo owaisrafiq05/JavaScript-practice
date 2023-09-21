@@ -337,3 +337,30 @@ if(emailid == "admin@gmail.com" && emailpass == "pass12345"){
 else{
     console.log("Invalid Email and Password");
 }
+
+////
+var fruit1 = "apple";
+var fruit2 = "orange";
+var fruit3 = "mango";
+
+console.log(fruit1);
+console.log(fruit2);
+console.log(fruit3);
+
+////
+//by using array we can write above situation in a single line
+// in array memory is used index wise
+//index always start with zero 
+// [] => empty array
+
+var fruit = ["apple","orange","mango"];
+console.log(fruit);
+
+/////
+
+var countryArray = [];
+countryArray[0] = "Pakistan";
+countryArray[1] = "India";
+countryArray[2] = "China";
+countryArray[4] = "USA";
+console.log(countryArray);

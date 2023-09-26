@@ -329,14 +329,14 @@
 
 /////
 
-var emailid = prompt("Enter Email id");
-var emailpass = prompt("Enter the password");
-if(emailid == "admin@gmail.com" && emailpass == "pass12345"){
-    console.log("LOG IN");
-}
-else{
-    console.log("Invalid Email and Password");
-}
+// var emailid = prompt("Enter Email id");
+// var emailpass = prompt("Enter the password");
+// if(emailid == "admin@gmail.com" && emailpass == "pass12345"){
+//     console.log("LOG IN");
+// }
+// else{
+//     console.log("Invalid Email and Password");
+// }
 
 ////
 var fruit1 = "apple";
@@ -364,3 +364,56 @@ countryArray[1] = "India";
 countryArray[2] = "China";
 countryArray[4] = "USA";
 console.log(countryArray);
+
+/////////Types of Array
+ //pop,push
+ //shift,unshift
+ //slice,splice
+
+var citiesArr = ['Karachi', 'Lahore' , 'Peshawar'];
+// citiesArr.unshift("Islamabad");//unshift will add Islamabad at begin
+// citiesArr.push("Islamabad");//push will add Islamabad at end
+// citiesArr.pop(); // pop will remove the last value
+// citiesArr.shift("Karachi"); //shift will remove the first value
+// citiesArr.slice(1,3);  //slice will help to copy array. slice will be starting and index
+                          // and ending in length
+// citiesArr.splice(0,1,"Islamabad"); // SYNTAX OF SPLICE : splice(starting, delete_count, "add value")                          
+console.log(citiesArr);
+
+
+
+/////
+//document.write => it's a function to print your output on ui/ux of browser which user can see
+var fullName = "Owais Rafiq";
+document.write("<h1>" + fullName + "</h1>"); // it will make heading of my name
+var age = "18";
+document.write("<p>" + "Age: " + " " + age + "</p>"); //it will para of my age 
+
+////
+// var citiesArr = ['Karachi', 'Lahore' , 'Peshawar'];
+// console.log(cities[0]); /// these all three console will print 3 values of array seperately
+// console.log(cities[1]);
+// console.log(cities[2]);
+
+
+// ///
+// FOR LOOP => loop means repitition/cycle. 
+/// syntax of for loop will be for(initialization ; condition ; increment or decreament){}
+
+
+for (var i = 1 ; i < 10 ; i++){
+    console.log("Hello World");
+}
+
+//// 
+/// below loop is use to print the list of 10 number using for loop
+for (var i = 1 ; i <=10 ; i++){
+    document.write("<p>" + i + "</h1>"); 
+}
+
+////
+var citiesArr = ['Karachi', 'Lahore' , 'Peshawar', 'Islamabad', 'Multan'];
+console.log(citiesArr.length); // .length property is use to count elements in array just like in above it's 3.
+for(var i = 0 ; i < citiesArr.length ; i++){
+    console.log(citiesArr[i]); //This loop will print each city name seperately on console.
+}

@@ -408,7 +408,7 @@ for (var i = 1 ; i < 10 ; i++){
 //// 
 /// below loop is use to print the list of 10 number using for loop
 for (var i = 1 ; i <=10 ; i++){
-    document.write("<p>" + i + "</h1>"); 
+    document.write("<p>" + i + "</h1>" + "</br>"); 
 }
 
 ////
@@ -416,4 +416,8 @@ var citiesArr = ['Karachi', 'Lahore' , 'Peshawar', 'Islamabad', 'Multan'];
 console.log(citiesArr.length); // .length property is use to count elements in array just like in above it's 3.
 for(var i = 0 ; i < citiesArr.length ; i++){
     console.log(citiesArr[i]); //This loop will print each city name seperately on console.
+}
+/////
+for(var i = 1 ; i<=10 ; i++){
+    document.write("2 x" + " " + i + " " + "=" + " " + 2 * i + "</br>");
 }

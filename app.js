@@ -339,85 +339,157 @@
 // }
 
 ////
-var fruit1 = "apple";
-var fruit2 = "orange";
-var fruit3 = "mango";
+// var fruit1 = "apple";
+// var fruit2 = "orange";
+// var fruit3 = "mango";
 
-console.log(fruit1);
-console.log(fruit2);
-console.log(fruit3);
+// console.log(fruit1);
+// console.log(fruit2);
+// console.log(fruit3);
 
-////
-//by using array we can write above situation in a single line
-// in array memory is used index wise
-//index always start with zero 
-// [] => empty array
+// ////
+// //by using array we can write above situation in a single line
+// // in array memory is used index wise
+// //index always start with zero 
+// // [] => empty array
 
-var fruit = ["apple","orange","mango"];
-console.log(fruit);
+// var fruit = ["apple","orange","mango"];
+// console.log(fruit);
 
-/////
+// /////
 
-var countryArray = [];
-countryArray[0] = "Pakistan";
-countryArray[1] = "India";
-countryArray[2] = "China";
-countryArray[4] = "USA";
-console.log(countryArray);
+// var countryArray = [];
+// countryArray[0] = "Pakistan";
+// countryArray[1] = "India";
+// countryArray[2] = "China";
+// countryArray[4] = "USA";
+// console.log(countryArray);
 
-/////////Types of Array
- //pop,push
- //shift,unshift
- //slice,splice
+// /////////Types of Array
+//  //pop,push
+//  //shift,unshift
+//  //slice,splice
 
-var citiesArr = ['Karachi', 'Lahore' , 'Peshawar'];
-// citiesArr.unshift("Islamabad");//unshift will add Islamabad at begin
-// citiesArr.push("Islamabad");//push will add Islamabad at end
-// citiesArr.pop(); // pop will remove the last value
-// citiesArr.shift("Karachi"); //shift will remove the first value
-// citiesArr.slice(1,3);  //slice will help to copy array. slice will be starting and index
-                          // and ending in length
-// citiesArr.splice(0,1,"Islamabad"); // SYNTAX OF SPLICE : splice(starting, delete_count, "add value")                          
-console.log(citiesArr);
-
-
-
-/////
-//document.write => it's a function to print your output on ui/ux of browser which user can see
-var fullName = "Owais Rafiq";
-document.write("<h1>" + fullName + "</h1>"); // it will make heading of my name
-var age = "18";
-document.write("<p>" + "Age: " + " " + age + "</p>"); //it will para of my age 
-
-////
 // var citiesArr = ['Karachi', 'Lahore' , 'Peshawar'];
-// console.log(cities[0]); /// these all three console will print 3 values of array seperately
-// console.log(cities[1]);
-// console.log(cities[2]);
+// // citiesArr.unshift("Islamabad");//unshift will add Islamabad at begin
+// // citiesArr.push("Islamabad");//push will add Islamabad at end
+// // citiesArr.pop(); // pop will remove the last value
+// // citiesArr.shift("Karachi"); //shift will remove the first value
+// // citiesArr.slice(1,3);  //slice will help to copy array. slice will be starting and index
+//                           // and ending in length
+// // citiesArr.splice(0,1,"Islamabad"); // SYNTAX OF SPLICE : splice(starting, delete_count, "add value")                          
+// console.log(citiesArr);
 
 
-// ///
-// FOR LOOP => loop means repitition/cycle. 
-/// syntax of for loop will be for(initialization ; condition ; increment or decreament){}
+
+// /////
+// //document.write => it's a function to print your output on ui/ux of browser which user can see
+// var fullName = "Owais Rafiq";
+// document.write("<h1>" + fullName + "</h1>"); // it will make heading of my name
+// var age = "18";
+// document.write("<p>" + "Age: " + " " + age + "</p>"); //it will para of my age 
+
+// ////
+// // var citiesArr = ['Karachi', 'Lahore' , 'Peshawar'];
+// // console.log(cities[0]); /// these all three console will print 3 values of array seperately
+// // console.log(cities[1]);
+// // console.log(cities[2]);
 
 
-for (var i = 1 ; i < 10 ; i++){
-    console.log("Hello World");
-}
+// // ///
+// // FOR LOOP => loop means repitition/cycle. 
+// /// syntax of for loop will be for(initialization ; condition ; increment or decreament){}
 
-//// 
-/// below loop is use to print the list of 10 number using for loop
-for (var i = 1 ; i <=10 ; i++){
-    document.write("<p>" + i + "</h1>" + "</br>"); 
+
+// for (var i = 1 ; i < 10 ; i++){
+//     console.log("Hello World");
+// }
+
+// //// 
+// /// below loop is use to print the list of 10 number using for loop
+// for (var i = 1 ; i <=10 ; i++){
+//     document.write("<p>" + i + "</h1>" + "</br>"); 
+// }
+
+// ////
+// var citiesArr = ['Karachi', 'Lahore' , 'Peshawar', 'Islamabad', 'Multan'];
+// console.log(citiesArr.length); // .length property is use to count elements in array just like in above it's 3.
+// for(var i = 0 ; i < citiesArr.length ; i++){
+//     console.log(citiesArr[i]); //This loop will print each city name seperately on console.
+// }
+// /////
+// for(var i = 1 ; i<=10 ; i++){
+//     document.write("2 x" + " " + i + " " + "=" + " " + 2 * i + "</br>");
+// }
+
+// ////
+// var isMatch = false;
+
+// for(var i = 0; i < citiesArr.length; i++){
+//     if(citiesArr[i] === "Karachi"){
+//         isMatch = true;
+//         document.write(isMatch);
+//         break;
+//     }
+//     else{
+//         isMatch = false;
+//         document.write(isMatch);
+//     }
+//     }
+
+/////
+//nested loop 
+for(var i = 1; i < 6; i++){
+    console.log("i",i);
+    for(var j = 1; j < 6; j++){
+        console.log("j",j);
+    }
 }
 
 ////
-var citiesArr = ['Karachi', 'Lahore' , 'Peshawar', 'Islamabad', 'Multan'];
-console.log(citiesArr.length); // .length property is use to count elements in array just like in above it's 3.
-for(var i = 0 ; i < citiesArr.length ; i++){
-    console.log(citiesArr[i]); //This loop will print each city name seperately on console.
+//array can store different type of array in one array
+var arr = ["karachi","lahore",true,undefined,null,22324];
+
+///
+//2d array example
+var arr = [["Karachi", "Pakistan"], ["Delhi","India"],["lahore","Karachi"]]
+console.log(arr[0][1]); //it will call pakistan from 1st array of index 0
+console.log(arr[2][0]);//it will call lahore from 3rd array of index 2
+
+for(var row = 0 ; row < arr.length ; row++){
+    console.log(arr[row]); //["karachi", "pakistan"]
+
+    for(var col = 0 ; col < arr[row].length ; col++){
+        console.log(arr[row][col]);
+    }
 }
-/////
-for(var i = 1 ; i<=10 ; i++){
-    document.write("2 x" + " " + i + " " + "=" + " " + 2 * i + "</br>");
-}
+
+///
+//for changing case you can choose toLowerCase() converts a string to lowercase, and String. toUpperCase() converts a string to uppercase.
+var a = "KARACHI";
+b = a.toLowerCase();
+console.log(b); //it will give output karachi all in lowercase
+
+////
+var c = "karachi";
+d = c.toUpperCase();
+console.log(d); //it will give output KARACHI all in uppercase
+
+////
+var username = "owais";
+var firstLetter = username[0].toUpperCase();
+var otherLetter = username.slice(1);
+
+console.log(firstLetter,"firstLetter"); // output will be O
+console.log(otherLetter,"otherLetter"); // output will be wais
+console.log(firstLetter + otherLetter); // output will be Owais
+
+/// 
+var username = "owais rafiq";
+var strSplit = username.split(" "); //split convert string into array
+console.log(strSplit); //output will be ['owais' , 'rafiq']
+var tempArr1 = strSplit[0].toUpperCase(); //output will be OWAIS
+var tempArr2 = strSplit[1].toUpperCase(); //output will be RAFIQ
+var tempfin = console.log(tempArr1 + " " + tempArr2); //output will be OWAIS RAFIQ
+
+///

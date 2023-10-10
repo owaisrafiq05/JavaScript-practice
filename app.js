@@ -1,183 +1,183 @@
-// alert("HELLO WORLD3");
-        // alert("HELLO WORLD2");
-        // alert("HELLO WORLD1");
+// // alert("HELLO WORLD3");
+//         // alert("HELLO WORLD2");
+//         // alert("HELLO WORLD1");
 
-        // Compiler => Read all Code and then generate output
-        // Interpreter => line allingmnet
-        // Assembler => assembler lang
-        // Javascript always use interpreter
-        // syntax is how to write the code
+//         // Compiler => Read all Code and then generate output
+//         // Interpreter => line allingmnet
+//         // Assembler => assembler lang
+//         // Javascript always use interpreter
+//         // syntax is how to write the code
 
-        // var num1 = 10;
-        // var num2 = 5;
-        // var result = 10 + 15;
-        // var username = "Owais Rafiq"
+//         // var num1 = 10;
+//         // var num2 = 5;
+//         // var result = 10 + 15;
+//         // var username = "Owais Rafiq"
 
-        // console.log(num1);
-        // console.log(num2);  
-        // console.log(username);
-        // console.log(result);
+//         // console.log(num1);
+//         // console.log(num2);  
+//         // console.log(username);
+//         // console.log(result);
 
-        // Program which add two number
-        var Num1 = 450;
-        var Num2 = 600;
+//         // Program which add two number
+//         var Num1 = 450;
+//         var Num2 = 600;
 
-        var add = Num1 + Num2;
+//         var add = Num1 + Num2;
 
-        console.log("add", add);
-
-
-    // var => keyword
-    // firstname => first name
-    // = => assigning operator
-    // Owais => variable value
-
-        var firstname = "Owais";
-        var lastname = "Rafiq";
-
-        var num = 1000;
-
-    // Concatination condition
-
-        var num1 = 500;
-        var num2 = 200;
-
-        var add = "500" + "200";
-
-        console.log("add", add);
-
-    // in inverted commas it act as a concadinate condition and it gives a output 500200 and if we simply write without commas so the output will be 700
+//         console.log("add", add);
 
 
+//     // var => keyword
+//     // firstname => first name
+//     // = => assigning operator
+//     // Owais => variable value
 
-    // DATA TYPES:
-    // 1) string => group of character. string will always identify inside double quotation containing data ""
-    var firstname = "Owais";  //String
-    // 2) Number => group of number. number will always without the quotation
-    var num10 = 1000; //Number
-    // 3) Boolean 
-    // 4) null
-    // 5) defined
+//         var firstname = "Owais";
+//         var lastname = "Rafiq";
 
-    
+//         var num = 1000;
 
-    // Only there's the chance that + operator do concatinate others arthemetic operator don't perform concatinate function.
+//     // Concatination condition
 
-    var num11 = 10 + 5 * (10-2) - 10; //BODMAS RULE
-    console.log("result", num11);
+//         // var num1 = 500;
+//         // var num2 = 200;
+
+//         // var add = "500" + "200";
+
+//         // console.log("add", add);
+
+//     // in inverted commas it act as a concadinate condition and it gives a output 500200 and if we simply write without commas so the output will be 700
+
+
+
+//     // DATA TYPES:
+//     // 1) string => group of character. string will always identify inside double quotation containing data ""
+//     var firstname = "Owais";  //String
+//     // 2) Number => group of number. number will always without the quotation
+//     var num10 = 1000; //Number
+//     // 3) Boolean 
+//     // 4) null
+//     // 5) defined
 
     
 
-    var num12 = "10" + 10 + 10;
-                // "1010" + 10
-                // "101010" (answer)
-    console.log("answer", num12);
+//     // Only there's the chance that + operator do concatinate others arthemetic operator don't perform concatinate function.
 
-    ////////
+//     var num11 = 10 + 5 * (10-2) - 10; //BODMAS RULE
+//     console.log("result", num11);
 
-    var num13 = 20 - "10" + 10 + ("10" -10);
-                // 20 -"10" + 10 + (0)
-                // 20 - "10" + 10 + 0
-                // 20 - "1010" + 0
-                // 20 - "10100" 
-                // -2010100 (answer)
+    
 
-    console.log("answer", num13)
+//     var num12 = "10" + 10 + 10;
+//                 // "1010" + 10
+//                 // "101010" (answer)
+//     console.log("answer", num12);
 
-    ////////
+//     ////////
 
-    var num14 = 10;
-    num14 += 5;
-    console.log("result", num14);
+//     var num13 = 20 - "10" + 10 + ("10" -10);
+//                 // 20 -"10" + 10 + (0)
+//                 // 20 - "10" + 10 + 0
+//                 // 20 - "1010" + 0
+//                 // 20 - "10100" 
+//                 // -2010100 (answer)
 
-    /////////
+//     console.log("answer", num13)
+
+//     ////////
+
+//     var num14 = 10;
+//     num14 += 5;
+//     console.log("result", num14);
+
+//     /////////
 
 
-    //post increament (number++) => it means number will first print and then it will add
-    var num15 =  15;
-    console.log("post increament", num15++);//15
-    console.log("result", num15);//16
+//     //post increament (number++) => it means number will first print and then it will add
+//     var num15 =  15;
+//     console.log("post increament", num15++);//15
+//     console.log("result", num15);//16
 
-    ////////
+//     ////////
 
-    // pre-increament (++number) => it means it will add number first and then it will print
-    var num16 =  15;
-    console.log("pre increament", ++num16);//16
-    console.log("result", num16);//16
+//     // pre-increament (++number) => it means it will add number first and then it will print
+//     var num16 =  15;
+//     console.log("pre increament", ++num16);//16
+//     console.log("result", num16);//16
 
-    ////////
-    var num17 = 15;
-    console.log("post-increament", num17--);//15
-    console.log("result", num17);//14
+//     ////////
+//     var num17 = 15;
+//     console.log("post-increament", num17--);//15
+//     console.log("result", num17);//14
 
-    /////////
+//     /////////
 
-    var num18 = 15;
-    console.log("pre-increament", --num18);//15
-    console.log("result", num18);//14
+//     var num18 = 15;
+//     console.log("pre-increament", --num18);//15
+//     console.log("result", num18);//14
 
-    /////////
+//     /////////
 
-    var num19 = 10 //11 //12 //13
-    var result = num19++ + num19++ + ++num19;
-                // 10 + 11 + 13;
-    console.log("result", result);
+//     var num19 = 10 //11 //12 //13
+//     var result = num19++ + num19++ + ++num19;
+//                 // 10 + 11 + 13;
+//     console.log("result", result);
 
-    /////////
+//     /////////
 
-    var num20 = 10; //11 //12 //13
-    var result1 = num20 + ++num20 + num20++ + num20 + num20++;
-                //10 + 11 + 12 + 10 + 13
-    console.log("result", result1);  
+//     var num20 = 10; //11 //12 //13
+//     var result1 = num20 + ++num20 + num20++ + num20 + num20++;
+//                 //10 + 11 + 12 + 10 + 13
+//     console.log("result", result1);  
 
-    ///////
+//     ///////
 
-    var num21 = 10; //11 //12 //13 //14
-    var result2 = num21 + ++num21 + ++num21 + num21++ + ++num21 + num21;
-                //10 + 11 + 12 + 12 + 14 + 14 
-    console.log("result", result2); 
+//     var num21 = 10; //11 //12 //13 //14
+//     var result2 = num21 + ++num21 + ++num21 + num21++ + ++num21 + num21;
+//                 //10 + 11 + 12 + 12 + 14 + 14 
+//     console.log("result", result2); 
 
-    ///////
+//     ///////
 
-    var num22 = 10; //11 //10 //11 //10
-    var result3 = num22 - num22++ + --num22 + num22++ + num22--;
-                //10 - 11 + 10 + 11 + 11;
-    console.log("result", result3);
+//     var num22 = 10; //11 //10 //11 //10
+//     var result3 = num22 - num22++ + --num22 + num22++ + num22--;
+//                 //10 - 11 + 10 + 11 + 11;
+//     console.log("result", result3);
 
-    ///////
-    var num23 = 10; //11 //10
-    var result = num23 + ++num23 + num23++ + --num23 - num23-- - --num23;
-                //10 + 11 + 11 + 10 - 10 - 9 
-    console.log("result",result);
+//     ///////
+//     var num23 = 10; //11 //10
+//     var result = num23 + ++num23 + num23++ + --num23 - num23-- - --num23;
+//                 //10 + 11 + 11 + 10 - 10 - 9 
+//     console.log("result",result);
 
-    ////// 
-    var num24 = 12; //13 //12 //12 //13 //12 //11
-    var result = num24++ - --num24 + num24 + ++num24 + num24-- - --num24;
-                //12 - 12 + 12 + 13 + 13 - 11  
-    console.log("result",result);
+//     ////// 
+//     var num24 = 12; //13 //12 //12 //13 //12 //11
+//     var result = num24++ - --num24 + num24 + ++num24 + num24-- - --num24;
+//                 //12 - 12 + 12 + 13 + 13 - 11  
+//     console.log("result",result);
 
-    //////
-     var num25 = 25; //24 //25 //26 //25 //24 //23
-     var result = num25-- + num25++ + num25++ - --num25 - --num25 - num25-- + num25;
-                //25 + 24 + 25 - 25 - 24 - 24 + 23 = 24
-     console.log(result);
+//     //////
+//      var num25 = 25; //24 //25 //26 //25 //24 //23
+//      var result = num25-- + num25++ + num25++ - --num25 - --num25 - num25-- + num25;
+//                 //25 + 24 + 25 - 25 - 24 - 24 + 23 = 24
+//      console.log(result);
 
-     //////
-     var num26 = 38; 
-     var result = ++num26 + ++num26 - --num26 - num26 + num26;
-                //39 + 40 - 39 - 39 + 39 = 40
-     console.log(result);
+//      //////
+//      var num26 = 38; 
+//      var result = ++num26 + ++num26 - --num26 - num26 + num26;
+//                 //39 + 40 - 39 - 39 + 39 = 40
+//      console.log(result);
 
-     //////
-     var num27 = 8;
-     var result = num27 + num27 + ++num27 + --num27 - --num27 + ++num27 + --num27 - num27;
-                //8 + 8 + 9 + 8 - 7 + 8 + 7 - 7 = 34
-     console.log(result);
+//      //////
+//      var num27 = 8;
+//      var result = num27 + num27 + ++num27 + --num27 - --num27 + ++num27 + --num27 - num27;
+//                 //8 + 8 + 9 + 8 - 7 + 8 + 7 - 7 = 34
+//      console.log(result);
 
-     /////
+//      /////
 
-     var stdStatus = true; //boolean
-     var stdStatus = "true"; //string
+//      var stdStatus = true; //boolean
+//      var stdStatus = "true"; //string
 
      //////
      
@@ -439,57 +439,142 @@
 
 /////
 //nested loop 
-for(var i = 1; i < 6; i++){
-    console.log("i",i);
-    for(var j = 1; j < 6; j++){
-        console.log("j",j);
-    }
+// for(var i = 1; i < 6; i++){
+//     console.log("i",i);
+//     for(var j = 1; j < 6; j++){
+//         console.log("j",j);
+//     }
+// }
+
+// ////
+// //array can store different type of array in one array
+// var arr = ["karachi","lahore",true,undefined,null,22324];
+
+// ///
+// //2d array example
+// var arr = [["Karachi", "Pakistan"], ["Delhi","India"],["lahore","Karachi"]]
+// console.log(arr[0][1]); //it will call pakistan from 1st array of index 0
+// console.log(arr[2][0]);//it will call lahore from 3rd array of index 2
+
+// for(var row = 0 ; row < arr.length ; row++){
+//     console.log(arr[row]); //["karachi", "pakistan"]
+
+//     for(var col = 0 ; col < arr[row].length ; col++){
+//         console.log(arr[row][col]);
+//     }
+// }
+
+// ///
+// //for changing case you can choose toLowerCase() converts a string to lowercase, and String. toUpperCase() converts a string to uppercase.
+// var a = "KARACHI";
+// b = a.toLowerCase();
+// console.log(b); //it will give output karachi all in lowercase
+
+// ////
+// var c = "karachi";
+// d = c.toUpperCase();
+// console.log(d); //it will give output KARACHI all in uppercase
+
+// ////
+// var username = "owais";
+// var firstLetter = username[0].toUpperCase();
+// var otherLetter = username.slice(1);
+
+// console.log(firstLetter,"firstLetter"); // output will be O
+// console.log(otherLetter,"otherLetter"); // output will be wais
+// console.log(firstLetter + otherLetter); // output will be Owais
+
+// /// 
+// var username = "owais rafiq";
+// var strSplit = username.split(" "); //split convert string into array
+// console.log(strSplit); //output will be ['owais' , 'rafiq']
+// var tempArr1 = strSplit[0].toUpperCase(); //output will be OWAIS
+// var tempArr2 = strSplit[1].toUpperCase(); //output will be RAFIQ
+// var tempfin = console.log(tempArr1 + " " + tempArr2); //output will be OWAIS RAFIQ
+
+///
+//to know the index number of any word in a sentence
+var str = "Create and customize your web3 profile, check out other profiles, and explore popular NFT collections and tokens."
+
+var indexNumber = str.indexOf("profile"); //indexOf check from starting
+console.log("index Number",indexNumber);
+var indexNumber = str.lastIndexOf("profile"); //lastIndexOf check from ending
+console.log("index Number",indexNumber);
+
+////
+var userName = "Owais";
+const indexNum = userName.indexOf("i");
+console.log("Index Num",indexNum);
+console.log("userName r",userName[indexNum]);
+
+////
+///it will check that eiter word karachi is present or not
+var city = "lahore,islamabad karachi";
+var indexNumber = city.indexOf("karachi");
+console.log("Index Number",indexNumber);
+if(indexNumber == -1){
+    console.log("Karachi not exist");
+}
+else{
+    console.log("Karachi exist");
 }
 
 ////
-//array can store different type of array in one array
-var arr = ["karachi","lahore",true,undefined,null,22324];
-
-///
-//2d array example
-var arr = [["Karachi", "Pakistan"], ["Delhi","India"],["lahore","Karachi"]]
-console.log(arr[0][1]); //it will call pakistan from 1st array of index 0
-console.log(arr[2][0]);//it will call lahore from 3rd array of index 2
-
-for(var row = 0 ; row < arr.length ; row++){
-    console.log(arr[row]); //["karachi", "pakistan"]
-
-    for(var col = 0 ; col < arr[row].length ; col++){
-        console.log(arr[row][col]);
-    }
-}
-
-///
-//for changing case you can choose toLowerCase() converts a string to lowercase, and String. toUpperCase() converts a string to uppercase.
-var a = "KARACHI";
-b = a.toLowerCase();
-console.log(b); //it will give output karachi all in lowercase
+var str = "Create and customize your web3 profile, check out other profiles, and explore popular NFT collections and tokens."
+// var replace = str.replace(/profiles/g prof);
+console.log(str);
 
 ////
-var c = "karachi";
-d = c.toUpperCase();
-console.log(d); //it will give output KARACHI all in uppercase
 
-////
-var username = "owais";
-var firstLetter = username[0].toUpperCase();
-var otherLetter = username.slice(1);
+var num1 = 88.22421;
+var floor = Math.floor(num1);
+console.log(floor); // output will be 88
 
-console.log(firstLetter,"firstLetter"); // output will be O
-console.log(otherLetter,"otherLetter"); // output will be wais
-console.log(firstLetter + otherLetter); // output will be Owais
+var num2 = 40.241414;
+var ceil = Math.ceil(num2);
+console.log(ceil); //ceil will add one in given input and ans will be 41
+
+var num3 = 82.71241;
+var roundOff = Math.round(num3);
+console.log(roundOff); // the round will round off the given output and ans will be 83
+
+/////
+
+var randomNo = Math.random();
+console.log(randomNo); // it will generate random number with decimal
+
+///
+//if you want to generate random number without any decimal places so we can use random with round function.
+
+var randomNo = Math.round(Math.random());
+console.log(randomNo);
 
 /// 
-var username = "owais rafiq";
-var strSplit = username.split(" "); //split convert string into array
-console.log(strSplit); //output will be ['owais' , 'rafiq']
-var tempArr1 = strSplit[0].toUpperCase(); //output will be OWAIS
-var tempArr2 = strSplit[1].toUpperCase(); //output will be RAFIQ
-var tempfin = console.log(tempArr1 + " " + tempArr2); //output will be OWAIS RAFIQ
+var randomNo = Math.round(Math.random() * 6 + 1); //RANGE FROM 1 TO 6
+console.log(randomNo);
+var randomNo = Math.round(Math.random() * 50 + 1); //RANGE FROM 1 TO 50
+console.log(randomNo);
+
+////
+var num1 = 100;
+var num2 = 200;
+var num3 = "300";
+console.log(typeof num1); //number
+console.log(typeof num2); //number
+console.log(typeof num3); //string
+
+//
+var num = "200";
+var num2 = "300";
+var sum = +num + +num2; //that + sign before the name of the var string will be converted into number
+console.log(num + " " + "+" + " " + num2 + " " + "=" + " " + sum); // output will be 200 + 300 = 500
+
+var num = Number("99.9");
+console.log(typeof num); //Through Number function we can convert string into number
+
+///
+var num = parseInt("99.9");
+console.log(typeof num);
+console.log(num); // output will be 99 bcz of the parseInt function which convert it to integer and ignore the whole decimals places
 
 ///

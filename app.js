@@ -694,3 +694,57 @@ function foo(){
 
 var result = foo();
 console.log(result);
+
+///
+function addition(num1,num2){
+    console.log(num1+num2);
+}
+addition(10,50); //output will be 60
+
+//
+//if user doent pass any parameter so default parameter will be 0
+function addition(num1=0,num2=0){
+    console.log(num1+num2);
+}
+addition(10,50);
+
+///
+//Calculator using functions
+function calc(num1,num2,opt){
+    console.log(num1,num2,opt);
+    if(opt == "+"){
+        console.log(num1+num2);
+    }
+    else if(opt == "-"){
+        console.log(num1-num2);
+    }
+    else if(opt == "*"){
+        console.log(num1*num2);
+    }
+    else if(opt == "/"){
+        console.log(num1/num2);
+    }
+    else{
+        console.log("Invalid Operator");
+    }
+}
+calc(200,500,"+"); //output will be 700
+calc(200,500,"-"); //output will be -300
+calc(200,500,"*"); //output will be 100000
+calc(200,500,"/"); //output will be 0.4
+calc(200,500,"$"); //output will be invalid operator
+
+
+///
+//global variable means no initialize of any variable in any block of statement
+//local variable means intialize of any variable in any block of statement
+var fullName = "Owais";
+
+function foo(){
+    fullName = "Owais Rafiq";
+    console.log(fullName);
+}
+foo(); //output will be Owais Rafiq
+console.log("Outer Function contain ",fullName); //output will be Owais Rafiq because we were thinking output will be Owais as global var declare Owais but the inner function overwrite the value of outer function so that's why answer come Owais Rafiq
+
+////

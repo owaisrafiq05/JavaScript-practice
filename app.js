@@ -494,87 +494,203 @@
 
 ///
 //to know the index number of any word in a sentence
-var str = "Create and customize your web3 profile, check out other profiles, and explore popular NFT collections and tokens."
+// var str = "Create and customize your web3 profile, check out other profiles, and explore popular NFT collections and tokens."
 
-var indexNumber = str.indexOf("profile"); //indexOf check from starting
-console.log("index Number",indexNumber);
-var indexNumber = str.lastIndexOf("profile"); //lastIndexOf check from ending
-console.log("index Number",indexNumber);
+// var indexNumber = str.indexOf("profile"); //indexOf check from starting
+// console.log("index Number",indexNumber);
+// var indexNumber = str.lastIndexOf("profile"); //lastIndexOf check from ending
+// console.log("index Number",indexNumber);
+
+// ////
+// var userName = "Owais";
+// const indexNum = userName.indexOf("i");
+// console.log("Index Num",indexNum);
+// console.log("userName r",userName[indexNum]);
+
+// ////
+// ///it will check that eiter word karachi is present or not
+// var city = "lahore,islamabad karachi";
+// var indexNumber = city.indexOf("karachi");
+// console.log("Index Number",indexNumber);
+// if(indexNumber == -1){
+//     console.log("Karachi not exist");
+// }
+// else{
+//     console.log("Karachi exist");
+// }
+
+// ////
+// var str = "Create and customize your web3 profile, check out other profiles, and explore popular NFT collections and tokens."
+// // var replace = str.replace(/profiles/g prof);
+// console.log(str);
+
+// ////
+
+// var num1 = 88.22421;
+// var floor = Math.floor(num1);
+// console.log(floor); // output will be 88
+
+// var num2 = 40.241414;
+// var ceil = Math.ceil(num2);
+// console.log(ceil); //ceil will add one in given input and ans will be 41
+
+// var num3 = 82.71241;
+// var roundOff = Math.round(num3);
+// console.log(roundOff); // the round will round off the given output and ans will be 83
+
+// /////
+
+// var randomNo = Math.random();
+// console.log(randomNo); // it will generate random number with decimal
+
+// ///
+// //if you want to generate random number without any decimal places so we can use random with round function.
+
+// var randomNo = Math.round(Math.random());
+// console.log(randomNo);
+
+// /// 
+// var randomNo = Math.round(Math.random() * 6 + 1); //RANGE FROM 1 TO 6
+// console.log(randomNo);
+// var randomNo = Math.round(Math.random() * 50 + 1); //RANGE FROM 1 TO 50
+// console.log(randomNo);
+
+// ////
+// var num1 = 100;
+// var num2 = 200;
+// var num3 = "300";
+// console.log(typeof num1); //number
+// console.log(typeof num2); //number
+// console.log(typeof num3); //string
+
+// //
+// var num = "200";
+// var num2 = "300";
+// var sum = +num + +num2; //that + sign before the name of the var string will be converted into number
+// console.log(num + " " + "+" + " " + num2 + " " + "=" + " " + sum); // output will be 200 + 300 = 500
+
+// var num = Number("99.9");
+// console.log(typeof num); //Through Number function we can convert string into number
+
+// ///
+// var num = parseInt("99.9");
+// console.log(typeof num);
+// console.log(num); // output will be 99 bcz of the parseInt function which convert it to integer and ignore the whole decimals places
+
+///
+// to display current time on console
+// var now = new Date(); //new Date give data in string but it's actually an object
+// console.log(now);
+// console.log(typeof now); //now function is an object
+// console.log(now.toString().slice(0,3)); //first we know that now is an object so we will convert into string through toString() and then we will slice(0,3) to get a output Thu
+// console.log(now.toDateString()); //get date string type
+// console.log(now.toTimeString()); //get time string type
 
 ////
-var userName = "Owais";
-const indexNum = userName.indexOf("i");
-console.log("Index Num",indexNum);
-console.log("userName r",userName[indexNum]);
+//program to print the current time data into day/month/year
+var now = new Date();
+console.log("date", now.getDate());
+console.log("Month",now.getMonth()+1);
+console.log("Year",now.getFullYear());
+
+const date = now.getDate();
+const month = now.getMonth()+1;
+const year = now.getFullYear();
+console.log(date + "/" + month + "/" + year); //it will give output in day/month/year
 
 ////
-///it will check that eiter word karachi is present or not
-var city = "lahore,islamabad karachi";
-var indexNumber = city.indexOf("karachi");
-console.log("Index Number",indexNumber);
-if(indexNumber == -1){
-    console.log("Karachi not exist");
-}
-else{
-    console.log("Karachi exist");
-}
-
-////
-var str = "Create and customize your web3 profile, check out other profiles, and explore popular NFT collections and tokens."
-// var replace = str.replace(/profiles/g prof);
-console.log(str);
-
-////
-
-var num1 = 88.22421;
-var floor = Math.floor(num1);
-console.log(floor); // output will be 88
-
-var num2 = 40.241414;
-var ceil = Math.ceil(num2);
-console.log(ceil); //ceil will add one in given input and ans will be 41
-
-var num3 = 82.71241;
-var roundOff = Math.round(num3);
-console.log(roundOff); // the round will round off the given output and ans will be 83
+const time = new Date().getTime();
+console.log("time",time); //it will tell of the milliseconds between current time and 1st Jan 1970
 
 /////
+var now = new Date();
+var userDOB = new Date("9 feb 2001");
 
-var randomNo = Math.random();
-console.log(randomNo); // it will generate random number with decimal
-
-///
-//if you want to generate random number without any decimal places so we can use random with round function.
-
-var randomNo = Math.round(Math.random());
-console.log(randomNo);
-
-/// 
-var randomNo = Math.round(Math.random() * 6 + 1); //RANGE FROM 1 TO 6
-console.log(randomNo);
-var randomNo = Math.round(Math.random() * 50 + 1); //RANGE FROM 1 TO 50
-console.log(randomNo);
+var userMillisec = userDOB.getTime();
+console.log("User Milliseconds",userMillisec); //it will tell the difference of the millisecond from 1st Jan 1970 to 9 feb 2001 that user has mention
+var diff = time - userMillisec;
+console.log("Difference",diff); // it will tell difference of user Millisecond and current time Millisecond
 
 ////
-var num1 = 100;
-var num2 = 200;
-var num3 = "300";
-console.log(typeof num1); //number
-console.log(typeof num2); //number
-console.log(typeof num3); //string
+//find age using millisecond
+var age = diff / (1000*60*60*24*30*12);
+console.log("age",age);
+console.log("age",Math.floor(age));
 
-//
-var num = "200";
-var num2 = "300";
-var sum = +num + +num2; //that + sign before the name of the var string will be converted into number
-console.log(num + " " + "+" + " " + num2 + " " + "=" + " " + sum); // output will be 200 + 300 = 500
+////
+//creating a program to detect that offer is valid for you till Oct 24 2023 or not?
+var now = new Date();
+var offerenddate = new Date("Oct 24 2023");
+var nowMS = now.getTime();
+var offerDateMS = offerenddate.getTime();
+console.log(nowMS);
+console.log(offerDateMS);
+var diff = offerDateMS - nowMS;
+var remaininghours = Math.floor(diff / (1000 * 60 * 60));
+console.log(remaininghours);
+if(remaininghours > 0){
+    console.log("Offer Valid");
+}
+else{
+    console.log("Offer Ended");
+}
 
-var num = Number("99.9");
-console.log(typeof num); //Through Number function we can convert string into number
+////
+//FUNCTIONS
+//() => paranthesis
+// function is use for the reusibility of code
+function helloWorld() {
+    console.log("Hello World");
+}
+helloWorld();
+helloWorld();
+helloWorld();
 
 ///
-var num = parseInt("99.9");
-console.log(typeof num);
-console.log(num); // output will be 99 bcz of the parseInt function which convert it to integer and ignore the whole decimals places
+//functions are of two type
+// user defined function and pre defined function
+function foo(){
+    alert("Hello World");
+}
+
+foo();
+
+//if you want ot pass value to function you will use parameters and arguments
+//paramater is use while creating function and argument is use while calling the function
+function add(parameters){
+    console.log(20+30);
+}
 
 ///
+function add(num1 , num2){
+    console.log(num1);
+    console.log(num2);
+}
+
+add(50,80);
+add(500,200);
+
+
+////
+function userName(name){
+    console.log("name",name);
+}
+var namePrompt = prompt("Enter your name", "Owais");
+userName(namePrompt);
+
+///
+function foo(){
+    var userName = "Owais";
+    console.log(userName);
+}
+foo("Owais Rafiq"); //output will be Owais because it will be overwrite
+
+///
+function foo(){
+    var num1 = 200; 
+    console.log("hello 1",num1);
+    return 500;
+}
+
+var result = foo();
+console.log(result);

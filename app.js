@@ -588,60 +588,60 @@
 
 ////
 //program to print the current time data into day/month/year
-var now = new Date();
-console.log("date", now.getDate());
-console.log("Month",now.getMonth()+1);
-console.log("Year",now.getFullYear());
+// var now = new Date();
+// console.log("date", now.getDate());
+// console.log("Month",now.getMonth()+1);
+// console.log("Year",now.getFullYear());
 
-const date = now.getDate();
-const month = now.getMonth()+1;
-const year = now.getFullYear();
-console.log(date + "/" + month + "/" + year); //it will give output in day/month/year
+// const date = now.getDate();
+// const month = now.getMonth()+1;
+// const year = now.getFullYear();
+// console.log(date + "/" + month + "/" + year); //it will give output in day/month/year
 
-////
-const time = new Date().getTime();
-console.log("time",time); //it will tell of the milliseconds between current time and 1st Jan 1970
+// ////
+// const time = new Date().getTime();
+// console.log("time",time); //it will tell of the milliseconds between current time and 1st Jan 1970
 
-/////
-var now = new Date();
-var userDOB = new Date("9 feb 2001");
+// /////
+// var now = new Date();
+// var userDOB = new Date("9 feb 2001");
 
-var userMillisec = userDOB.getTime();
-console.log("User Milliseconds",userMillisec); //it will tell the difference of the millisecond from 1st Jan 1970 to 9 feb 2001 that user has mention
-var diff = time - userMillisec;
-console.log("Difference",diff); // it will tell difference of user Millisecond and current time Millisecond
+// var userMillisec = userDOB.getTime();
+// console.log("User Milliseconds",userMillisec); //it will tell the difference of the millisecond from 1st Jan 1970 to 9 feb 2001 that user has mention
+// var diff = time - userMillisec;
+// console.log("Difference",diff); // it will tell difference of user Millisecond and current time Millisecond
 
-////
-//find age using millisecond
-var age = diff / (1000*60*60*24*30*12);
-console.log("age",age);
-console.log("age",Math.floor(age));
+// ////
+// //find age using millisecond
+// var age = diff / (1000*60*60*24*30*12);
+// console.log("age",age);
+// console.log("age",Math.floor(age));
 
-////
-//creating a program to detect that offer is valid for you till Oct 24 2023 or not?
-var now = new Date();
-var offerenddate = new Date("Oct 24 2023");
-var nowMS = now.getTime();
-var offerDateMS = offerenddate.getTime();
-console.log(nowMS);
-console.log(offerDateMS);
-var diff = offerDateMS - nowMS;
-var remaininghours = Math.floor(diff / (1000 * 60 * 60));
-console.log(remaininghours);
-if(remaininghours > 0){
-    console.log("Offer Valid");
-}
-else{
-    console.log("Offer Ended");
-}
+// ////
+// //creating a program to detect that offer is valid for you till Oct 24 2023 or not?
+// var now = new Date();
+// var offerenddate = new Date("Oct 24 2023");
+// var nowMS = now.getTime();
+// var offerDateMS = offerenddate.getTime();
+// console.log(nowMS);
+// console.log(offerDateMS);
+// var diff = offerDateMS - nowMS;
+// var remaininghours = Math.floor(diff / (1000 * 60 * 60));
+// console.log(remaininghours);
+// if(remaininghours > 0){
+//     console.log("Offer Valid");
+// }
+// else{
+//     console.log("Offer Ended");
+// }
 
-////
-//FUNCTIONS
-//() => paranthesis
-// function is use for the reusibility of code
-function helloWorld() {
-    console.log("Hello World");
-}
+// ////
+// //FUNCTIONS
+// //() => paranthesis
+// // function is use for the reusibility of code
+// function helloWorld() {
+//     console.log("Hello World");
+// }
 helloWorld();
 helloWorld();
 helloWorld();
@@ -649,102 +649,145 @@ helloWorld();
 ///
 //functions are of two type
 // user defined function and pre defined function
-function foo(){
-    alert("Hello World");
-}
+// function foo(){
+//     alert("Hello World");
+// }
 
 foo();
 
 //if you want ot pass value to function you will use parameters and arguments
 //paramater is use while creating function and argument is use while calling the function
-function add(parameters){
-    console.log(20+30);
-}
+// function add(parameters){
+//     console.log(20+30);
+// }
 
-///
-function add(num1 , num2){
-    console.log(num1);
-    console.log(num2);
-}
+// ///
+// function add(num1 , num2){
+//     console.log(num1);
+//     console.log(num2);
+// }
 
-add(50,80);
-add(500,200);
+// add(50,80);
+// add(500,200);
 
+
+// ////
+// function userName(name){
+//     console.log("name",name);
+// }
+// var namePrompt = prompt("Enter your name", "Owais");
+// userName(namePrompt);
+
+// ///
+// function foo(){
+//     var userName = "Owais";
+//     console.log(userName);
+// }
+// foo("Owais Rafiq"); //output will be Owais because it will be overwrite
+
+// ///
+// function foo(){
+//     var num1 = 200; 
+//     console.log("hello 1",num1);
+//     return 500;
+// }
+
+// var result = foo();
+// console.log(result);
+
+// ///
+// function addition(num1,num2){
+//     console.log(num1+num2);
+// }
+// addition(10,50); //output will be 60
+
+// //
+// //if user doent pass any parameter so default parameter will be 0
+// function addition(num1=0,num2=0){
+//     console.log(num1+num2);
+// }
+// addition(10,50);
+
+// ///
+// //Calculator using functions
+// function calc(num1,num2,opt){
+//     console.log(num1,num2,opt);
+//     if(opt == "+"){
+//         console.log(num1+num2);
+//     }
+//     else if(opt == "-"){
+//         console.log(num1-num2);
+//     }
+//     else if(opt == "*"){
+//         console.log(num1*num2);
+//     }
+//     else if(opt == "/"){
+//         console.log(num1/num2);
+//     }
+//     else{
+//         console.log("Invalid Operator");
+//     }
+// }
+// calc(200,500,"+"); //output will be 700
+// calc(200,500,"-"); //output will be -300
+// calc(200,500,"*"); //output will be 100000
+// calc(200,500,"/"); //output will be 0.4
+// calc(200,500,"$"); //output will be invalid operator
+
+
+// ///
+// //global variable means no initialize of any variable in any block of statement
+// //local variable means intialize of any variable in any block of statement
+// var fullName = "Owais";
+
+// function foo(){
+//     fullName = "Owais Rafiq";
+//     console.log(fullName);
+// }
+// foo(); //output will be Owais Rafiq
+// console.log("Outer Function contain ",fullName); //output will be Owais Rafiq because we were thinking output will be Owais as global var declare Owais but the inner function overwrite the value of outer function so that's why answer come Owais Rafiq
 
 ////
-function userName(name){
-    console.log("name",name);
-}
-var namePrompt = prompt("Enter your name", "Owais");
-userName(namePrompt);
-
-///
-function foo(){
-    var userName = "Owais";
-    console.log(userName);
-}
-foo("Owais Rafiq"); //output will be Owais because it will be overwrite
-
-///
-function foo(){
-    var num1 = 200; 
-    console.log("hello 1",num1);
-    return 500;
-}
-
-var result = foo();
-console.log(result);
-
-///
 function addition(num1,num2){
     console.log(num1+num2);
 }
-addition(10,50); //output will be 60
 
-//
-//if user doent pass any parameter so default parameter will be 0
-function addition(num1=0,num2=0){
-    console.log(num1+num2);
+//calculator input
+function foo(num1,num2){
+    console.log(num1,num2);
 }
-addition(10,50);
 
-///
-//Calculator using functions
-function calc(num1,num2,opt){
-    console.log(num1,num2,opt);
-    if(opt == "+"){
-        console.log(num1+num2);
-    }
-    else if(opt == "-"){
-        console.log(num1-num2);
-    }
-    else if(opt == "*"){
-        console.log(num1*num2);
-    }
-    else if(opt == "/"){
-        console.log(num1/num2);
-    }
-    else{
-        console.log("Invalid Operator");
-    }
+function getInputValue(){
+    var inputField = document.getElementById("userName");
+    console.log(inputField.value);
 }
-calc(200,500,"+"); //output will be 700
-calc(200,500,"-"); //output will be -300
-calc(200,500,"*"); //output will be 100000
-calc(200,500,"/"); //output will be 0.4
-calc(200,500,"$"); //output will be invalid operator
 
-
-///
-//global variable means no initialize of any variable in any block of statement
-//local variable means intialize of any variable in any block of statement
-var fullName = "Owais";
-
-function foo(){
-    fullName = "Owais Rafiq";
-    console.log(fullName);
+//how to get input from user and print it on console
+function getFormValues(){
+    var firstNameInput = document.getElementById("firstName");
+    var lastNameInput = document.getElementById("lastName");
+    var ageInput = document.getElementById("age");
+    console.log(firstNameInput.value);
+    console.log(lastNameInput.value);
+    console.log(ageInput.value);
 }
-foo(); //output will be Owais Rafiq
-console.log("Outer Function contain ",fullName); //output will be Owais Rafiq because we were thinking output will be Owais as global var declare Owais but the inner function overwrite the value of outer function so that's why answer come Owais Rafiq
 
-////
+function setFormValues(){
+    var firstNameInput = document.getElementById("firstName");
+    var lastNameInput = document.getElementById("lastName");
+    var ageInput = document.getElementById("age");
+    console.log(firstNameInput.value);
+    console.log(lastNameInput.value);
+    console.log(ageInput.value);
+
+    firstNameInput.value = "OWAIS"; //it will set the value
+    lastNameInput.value = "RAFIQ"; //it will set the value
+    ageInput.value = "18"; //it will set the value'
+}
+
+function calc(){
+    var inputValue = document.getElementById(inputValue);
+    console.log(inputValue.value);
+    var result = eval(inputValue.value);
+    console.log("result",result.value);
+}

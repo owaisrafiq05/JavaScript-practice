@@ -748,46 +748,95 @@ foo();
 // console.log("Outer Function contain ",fullName); //output will be Owais Rafiq because we were thinking output will be Owais as global var declare Owais but the inner function overwrite the value of outer function so that's why answer come Owais Rafiq
 
 ////
-function addition(num1,num2){
-    console.log(num1+num2);
+// function addition(num1,num2){
+//     console.log(num1+num2);
+// }
+
+// //calculator input
+// function foo(num1,num2){
+//     console.log(num1,num2);
+// }
+
+// function getInputValue(){
+//     var inputField = document.getElementById("userName");
+//     console.log(inputField.value);
+// }
+
+// //how to get input from user and print it on console
+// function getFormValues(){
+//     var firstNameInput = document.getElementById("firstName");
+//     var lastNameInput = document.getElementById("lastName");
+//     var ageInput = document.getElementById("age");
+//     console.log(firstNameInput.value);
+//     console.log(lastNameInput.value);
+//     console.log(ageInput.value);
+// }
+
+// function setFormValues(){
+//     var firstNameInput = document.getElementById("firstName");
+//     var lastNameInput = document.getElementById("lastName");
+//     var ageInput = document.getElementById("age");
+//     console.log(firstNameInput.value);
+//     console.log(lastNameInput.value);
+//     console.log(ageInput.value);
+
+//     firstNameInput.value = "OWAIS"; //it will set the value
+//     lastNameInput.value = "RAFIQ"; //it will set the value
+//     ageInput.value = "18"; //it will set the value'
+// }
+
+// function calc(){
+//     var inputValue = document.getElementById(inputVal);
+//     console.log(inputValue.value);
+//     var result = eval(inputValue.value);
+//     console.log("result",result.value);
+// }
+
+/////
+//See more and less more function toggle function
+function seeMore() {
+    var para = document.getElementById("para");
+    var btn = document.getElementById("btn");
+
+    if(btn.innerHTML === "See More"){
+        console.log(btn.innerHTML,"if");
+        para.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sequi nostrum ea porro. loremr wammfwmf aw fa fa f foaw fa  awfawo foqw faw. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse debitis a vero dolorum fuga tempore. Odio excepturi fugiat necessitatibus facere, dolorem alias, corrupti fuga saepe pariatur nobis deleniti maiores iste!";
+        btn.innerHTML = "Less More";
+    }
+    else{
+        console.log(btn.innerHTML,"else");
+        para.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sequi nostrum ea porro.";
+        btn.innerHTML = "See More";
+    }
 }
 
-//calculator input
-function foo(num1,num2){
-    console.log(num1,num2);
+////
+//changing image on mouse toggle
+function mouseOverEvent(ele,toggle){
+    console.log(ele,toggle);
+    if(toggle == "in"){
+        ele.src = "https://cdn.motor1.com/images/mgl/g440ng/s3/rimac-nevera.jpg";
+    }
+    else{
+        ele.src = "https://img.freepik.com/premium-photo/bangkok-thailand-08082022-lamborghini-luxury-super-car-fast-sports-premium-lighting-background-3d-illustration_67092-1599.jpg";
+    }
+    
 }
 
-function getInputValue(){
-    var inputField = document.getElementById("userName");
-    console.log(inputField.value);
+////
+//onfocus and onblur function
+//they both focus on input function
+function validDataInput(){
+    var userInout = document.getElementById("userInput");
+    console.log("User Input ",userInput.value);
+    if(userInput.value.length < 3){
+        alert("Enter correct name");
+    }
+    else{
+        alert("Correct Value")
+    }
 }
 
-//how to get input from user and print it on console
-function getFormValues(){
-    var firstNameInput = document.getElementById("firstName");
-    var lastNameInput = document.getElementById("lastName");
-    var ageInput = document.getElementById("age");
-    console.log(firstNameInput.value);
-    console.log(lastNameInput.value);
-    console.log(ageInput.value);
-}
-
-function setFormValues(){
-    var firstNameInput = document.getElementById("firstName");
-    var lastNameInput = document.getElementById("lastName");
-    var ageInput = document.getElementById("age");
-    console.log(firstNameInput.value);
-    console.log(lastNameInput.value);
-    console.log(ageInput.value);
-
-    firstNameInput.value = "OWAIS"; //it will set the value
-    lastNameInput.value = "RAFIQ"; //it will set the value
-    ageInput.value = "18"; //it will set the value'
-}
-
-function calc(){
-    var inputValue = document.getElementById(inputValue);
-    console.log(inputValue.value);
-    var result = eval(inputValue.value);
-    console.log("result",result.value);
+function focusInput(){
+    console.log("focus .....");
 }

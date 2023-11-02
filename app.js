@@ -794,49 +794,99 @@ foo();
 
 /////
 //See more and less more function toggle function
-function seeMore() {
-    var para = document.getElementById("para");
-    var btn = document.getElementById("btn");
+// function seeMore() {
+//     var para = document.getElementById("para");
+//     var btn = document.getElementById("btn");
 
-    if(btn.innerHTML === "See More"){
-        console.log(btn.innerHTML,"if");
-        para.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sequi nostrum ea porro. loremr wammfwmf aw fa fa f foaw fa  awfawo foqw faw. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse debitis a vero dolorum fuga tempore. Odio excepturi fugiat necessitatibus facere, dolorem alias, corrupti fuga saepe pariatur nobis deleniti maiores iste!";
-        btn.innerHTML = "Less More";
-    }
-    else{
-        console.log(btn.innerHTML,"else");
-        para.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sequi nostrum ea porro.";
-        btn.innerHTML = "See More";
-    }
-}
+//     if(btn.innerHTML === "See More"){
+//         console.log(btn.innerHTML,"if");
+//         para.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sequi nostrum ea porro. loremr wammfwmf aw fa fa f foaw fa  awfawo foqw faw. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse debitis a vero dolorum fuga tempore. Odio excepturi fugiat necessitatibus facere, dolorem alias, corrupti fuga saepe pariatur nobis deleniti maiores iste!";
+//         btn.innerHTML = "Less More";
+//     }
+//     else{
+//         console.log(btn.innerHTML,"else");
+//         para.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sequi nostrum ea porro.";
+//         btn.innerHTML = "See More";
+//     }
+// }
 
-////
-//changing image on mouse toggle
-function mouseOverEvent(ele,toggle){
-    console.log(ele,toggle);
-    if(toggle == "in"){
-        ele.src = "https://cdn.motor1.com/images/mgl/g440ng/s3/rimac-nevera.jpg";
-    }
-    else{
-        ele.src = "https://img.freepik.com/premium-photo/bangkok-thailand-08082022-lamborghini-luxury-super-car-fast-sports-premium-lighting-background-3d-illustration_67092-1599.jpg";
-    }
+// ////
+// //changing image on mouse toggle
+// function mouseOverEvent(ele,toggle){
+//     console.log(ele,toggle);
+//     if(toggle == "in"){
+//         ele.src = "https://cdn.motor1.com/images/mgl/g440ng/s3/rimac-nevera.jpg";
+//     }
+//     else{
+//         ele.src = "https://img.freepik.com/premium-photo/bangkok-thailand-08082022-lamborghini-luxury-super-car-fast-sports-premium-lighting-background-3d-illustration_67092-1599.jpg";
+//     }
     
-}
+// }
 
-////
-//onfocus and onblur function
-//they both focus on input function
-function validDataInput(){
-    var userInout = document.getElementById("userInput");
-    console.log("User Input ",userInput.value);
-    if(userInput.value.length < 3){
-        alert("Enter correct name");
-    }
-    else{
-        alert("Correct Value")
-    }
-}
+// ////
+// //onfocus and onblur function
+// //they both focus on input function
+// function validDataInput(){
+//     var userInout = document.getElementById("userInput");
+//     console.log("User Input ",userInput.value);
+//     if(userInput.value.length < 3){
+//         alert("Enter correct name");
+//     }
+//     else{
+//         alert("Correct Value")
+//     }
+// }
 
-function focusInput(){
-    console.log("focus .....");
+// function focusInput(){
+//     console.log("focus .....");
+// }
+
+
+// ///making a input of text of name that if the name length is greater than 3 so the  border will be green else less than 3 will be red
+// function focusmood(elem){
+//     console.log("Focus Mood",elem);
+//     elem.style.border = "1px solid red";
+// }
+
+// function blurMood(elem){
+//     if(elem.value.length < 3){
+//         elem.style.border = "1px solid red";
+//     }
+//     else{
+//         elem.style.border = "1px solid green";
+//     }
+// }
+
+
+// ////
+// //this function create that a text if you fill your name in input and it's greater than 3 so it will show succesfully login else if length of name is b/w 3 and 1 so it show invalid username and no fill of name in input shows required input is missing
+// function submit(){
+//     var usename = document.getElementById("username");
+//     var helperText = document.getElementById("helperText");
+
+//     if(username.value.length >= 3){
+//     helperText.innerHTML = "succesfully submit";
+//     helperText.style.color = "green";
+//     }
+//     else if(username.value.length < 3 && username.value.length > 0){
+//         helperText.innerHTML = "Invalid Username";
+//         helperText.style.color = "red";
+//     }
+//     else if(username.value.length == 0){
+//         helperText.innerHTML = "Required field is missing";
+//         helperText.style.color = "red";
+//         }
+// }
+
+var parent = document.getElementById("parent");
+function showBox(){
+   parent.style.display = "block";
+}
+function hideBox(){
+    parent.style.display = "none";
+    parent.style.visibility = "hidden";
+}    
+
+function foo(){
+    
 }

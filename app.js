@@ -888,5 +888,14 @@ function hideBox(){
 }    
 
 function foo(){
-    
+    var heading = document.getElementById("heading");
+    heading.classsName = " black";
+    console.log("foo()",heading.classsName);
+}
+
+function removeBlack(){
+    var heading = document.getElementById("heading");
+    heading.classsName = "heading white";
+    console.log(heading.classList)
+    heading.classList = remove("black"); 
 }

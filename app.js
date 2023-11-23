@@ -642,9 +642,9 @@
 // function helloWorld() {
 //     console.log("Hello World");
 // }
-helloWorld();
-helloWorld();
-helloWorld();
+// helloWorld();
+// helloWorld();
+// helloWorld();
 
 ///
 //functions are of two type
@@ -653,7 +653,7 @@ helloWorld();
 //     alert("Hello World");
 // }
 
-foo();
+// foo();
 
 //if you want ot pass value to function you will use parameters and arguments
 //paramater is use while creating function and argument is use while calling the function
@@ -878,24 +878,98 @@ foo();
 //         }
 // }
 
-var parent = document.getElementById("parent");
-function showBox(){
-   parent.style.display = "block";
-}
-function hideBox(){
-    parent.style.display = "none";
-    parent.style.visibility = "hidden";
-}    
+// var parent = document.getElementById("parent");
+// function showBox(){
+//    parent.style.display = "block";
+// }
+// function hideBox(){
+//     parent.style.display = "none";
+//     parent.style.visibility = "hidden";
+// }    
 
-function foo(){
-    var heading = document.getElementById("heading");
-    heading.classsName = " black";
-    console.log("foo()",heading.classsName);
+// function foo(){
+//     var heading = document.getElementById("heading");
+//     heading.classsName = " black";
+//     console.log("foo()",heading.classsName);
+// }
+
+// function removeBlack(){
+//     var heading = document.getElementById("heading");
+//     heading.classsName = "heading white";
+//     console.log(heading.classList)
+//     heading.classList = remove("black"); 
+// }
+
+////
+var para = document.getElementsByTagName("p");
+console.log(para[2].innerHTML);
+console.log(para[2].style.background = "red");
+
+for(var i=0;i< para.length;i++){
+    console.log(para[i]);
+    para[i].style.background = "blue";
+    para[i].style.color = "white";
+    if(i % 2 == 0){
+        para[i].style.background = "blue";
+        para[i].style.color = "white";        
+    }
+    else{
+        para[i].style.background = "red";
+        para[i].style.color = "white";
+    }
 }
 
-function removeBlack(){
-    var heading = document.getElementById("heading");
-    heading.classsName = "heading white";
-    console.log(heading.classList)
-    heading.classList = remove("black"); 
+var parent = document.getElementById("parent2");
+var para = document.getElementsByTagName("p");
+console.log(parent);
+console.log(para);
+
+
+///
+//DOM stand for Document Object Model
+// D => Document => File of HTML
+// O => Object => Method/Properties
+// M => Model => Logics
+console.log(document.childNodes);
+var h1 = document.childNodes[1].childNodes[2].childNodes[31];
+h1.style.color = "red";
+console.log(h1);
+
+//
+//next sibling and previous sibling
+//childnodes is use to find how many child parent tag contain
+//
+const previousChild = h1.lastChild;
+console.log(previousChild,"child"); 
+
+////
+//{} => Object brackets
+//multiple collection of date will be seperated by comma(,)
+var obj = {
+    name : "John",
+    age : 25,
 }
+console.log(obj);
+console.log(obj.name); //dot notation
+console.log(obj["name"]); //array notation
+var stdobj = {
+    id : 22,
+    name: "Owais",
+    age: 25,
+    gender: "male",
+    marks: {
+        maths: 85,
+        english: 90,
+    }
+}
+console.log(stdobj);
+console.log("Id:",stdobj.id);
+console.log("Name:",stdobj.name);
+console.log("Marks Obtained in English is:",stdobj.marks.english);
+
+///
+//JS is the Object Oriented Programming
+//Means Everything in JS is the object oriented
+var name = "Owais";
+var length = name.length;
+console.log("Length of word Owais is:",length);
